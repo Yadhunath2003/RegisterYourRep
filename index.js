@@ -25,6 +25,7 @@ app.post("/sign_up",(req,res)=>{
     var password = req.body.password;
 
     var data = {
+        "username" : username,
         "email" : email,
         "password" : password
     }
