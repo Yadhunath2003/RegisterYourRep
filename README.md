@@ -11,11 +11,12 @@ Tailored Results: By inputting your preferences, Register Your Rep delivers work
 Your Perfect Workout Partner: With Register Your Rep, you have the ideal workout companion to guide you on your fitness journey and help you attain your dream physique.
 
 # How to Use:
-Choose Your Level: Select your fitness level - Beginner, Intermediate, or Advanced.
-Select Muscle Group: Pick the specific muscle group you want to work on from the available options.
-Get Your Plan: Register Your Rep will generate a personalized workout plan tailored to your preferences and goals.
-Follow the Plan: Execute the workout plan consistently to progress towards achieving your desired results.
-Get Started:
+- Choose Your Level: Select your fitness level - Beginner, Intermediate, or Advanced.
+- Select Muscle Group: Pick the specific muscle group you want to work on from the available options.
+- Get Your Plan: Register Your Rep will generate a personalized workout plan tailored to your preferences and goals.
+- Follow the Plan: Execute the workout plan consistently to progress towards achieving your desired results.
+
+# Get Started:
 Begin your fitness journey today with Register Your Rep and take a step closer to reaching your dream body.
 
 Visit Register Your Rep
