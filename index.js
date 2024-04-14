@@ -20,12 +20,19 @@ var db = mongoose.connection;
 db.on('error',()=>console.log("Error in Connecting to Database"));
 db.once('open',()=>console.log("Connected to Database"))
 
+// Serve login.html when accessing the root URL
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + '/public/login.html');
+});
+
+// Handle form submission from login.html
 app.post("/sign_up",(req,res)=>{
+    var username = req.body.username
     var email = req.body.email;
     var password = req.body.password;
 
     var data = {
-        "username" : username,
+        "username": username,
         "email" : email,
         "password" : password
     }
@@ -35,17 +42,11 @@ app.post("/sign_up",(req,res)=>{
             throw err;
         }
         console.log("Record Inserted Successfully");
+        // Redirect to signup_success.html after successful form submission
+        res.sendFile(__dirname + '/public/signup_success.html');
     });
+});
 
-    return res.redirect('signup_success.html')
-
-})
-
-app.get("/",(req,res)=>{
-    res.set({
-        "Allow-access-Allow-Origin": '*'
-    })
-    return res.redirect('login.html');
-}).listen(3000);
-
-console.log("Listening on PORT 3000");
+app.listen(3000, () => {
+    console.log("Listening on PORT 3000");
+});
