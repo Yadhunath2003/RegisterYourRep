@@ -1,14 +1,7 @@
-body {
-    background-color: #000000;
-    color: #fff;
-}
-
 .main {
     padding: 20px;
     font-family: 'Helvetica', serif;
-    background-color: #000000;
-    border-radius: 10px;
-    margin-top: 50px;
+    box-shadow: 5px 5px 7px 5px #888888;
 }
 
 .main h2 {
@@ -33,20 +26,10 @@ body {
 #submit {
     font-family: 'Helvetica', serif;
     width: 100%;
-    background-color: #ff0000;
+    background-color: #767474;
     border: none;
     color: white;
     padding: 16px 32px;
     margin: 4px 2px;
     border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#submit:hover {
-    background-color: #ff0000c6;
-}
-
-::placeholder {
-    color: #ccc;
 }
