@@ -48,4 +48,14 @@ app.get("/",(req,res)=>{
     return res.redirect('login.html');
 }).listen(3000);
 
+// Serve 'RYR.html' from the 'public' directory
+app.get("/RYR.html", (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/RYR.html'));
+});
+
+// Serve 'login.html' from the same directory as 'RYR.html'
+app.get("/login.html", (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/login.html'));
+});
+
 console.log("Listening on PORT 3000");
